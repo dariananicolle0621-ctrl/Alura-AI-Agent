@@ -1,6 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from app.config import GOOGLE_API_KEY
+from Backend.app.config import GOOGLE_API_KEY
 
 
 def get_llm():

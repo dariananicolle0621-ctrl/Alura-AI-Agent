@@ -1,6 +1,6 @@
 from langchain_community.document_loaders import PyPDFLoader
 
-from app.config import PDF_PATH
+from Backend.app.config import PDF_PATH
 
 
 def load_documents():
