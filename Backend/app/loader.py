@@ -1,14 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
-
-from Backend.app.config import PDF_PATH
-
+from app.config import PDF_PATH
 
 def load_documents():
-    """
-    Carga el documento PDF y devuelve una lista de páginas.
-    """
-
+    """Carga el PDF y devuelve una lista de documentos (páginas)."""
     loader = PyPDFLoader(str(PDF_PATH))
-    documents = loader.load()
-
-    return documents
+    return loader.load()

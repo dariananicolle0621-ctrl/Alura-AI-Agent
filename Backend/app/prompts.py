@@ -1,13 +1,8 @@
 from langchain_core.prompts import ChatPromptTemplate
 
-
 def create_prompt():
-    """
-    Crea las instrucciones que recibirá Gemini
-    para responder utilizando la información recuperada del PDF.
-    """
-
-    prompt = ChatPromptTemplate.from_template(
+    """Crea el prompt que se enviará a Gemini con el contexto y la pregunta."""
+    return ChatPromptTemplate.from_template(
         """
         Eres un asistente virtual de atención al cliente.
 
@@ -31,5 +26,3 @@ def create_prompt():
         RESPUESTA:
         """
     )
-
-    return prompt
